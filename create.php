@@ -9,6 +9,8 @@ if (isset($_SESSION['loggedin'])) {
 	exit();
 }
 
+$whitelist = Array("cvieira", "testing"); // This is a whitelist of which users can make posts.
+
 $admin = "cvieira"; // This is the username of the admin. This user will get special privileges.
 $folderName = "cntprojects"; // This is the name of the parent folder of the projects system.
 

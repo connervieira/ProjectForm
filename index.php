@@ -24,15 +24,15 @@ $projectsArray = unserialize(file_get_contents('/Library/Server/Web/Data/Sites/D
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>V0LT - Auburn CNT Projects</title>
-	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
-	<link rel="stylesheet" href="/assets/css/Features-Blue.css">
-	<link rel="stylesheet" href="/assets/css/Header-Blue.css">
-	<link rel="stylesheet" href="/assets/css/Highlight-Phone.css">
-	<link rel="stylesheet" href="/assets/css/Login-Form-Dark.css">
-	<link rel="stylesheet" href="/assets/css/styles.css">
-	<link href="/assets/css/simple-sidebar.css" rel="stylesheet">
-	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/fonts/ionicons.min.css">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/css/Features-Blue.css">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/css/Header-Blue.css">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/css/Highlight-Phone.css">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/css/Login-Form-Dark.css">
+	<link rel="stylesheet" href="https://v0lttech.com/assets/css/styles.css">
+	<link href="https://v0lttech.com/assets/css/simple-sidebar.css" rel="stylesheet">
+	<link href="https://v0lttech.com/assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body style="width:100%;background:#191919;margin:0%;">
