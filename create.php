@@ -11,6 +11,12 @@ if (isset($_SESSION['loggedin'])) {
 
 $whitelist = Array("cvieira", "testing"); // This is a whitelist of which users can make posts.
 
+if (!in_array($username, $whitelist)) {
+    echo "You are not whitelisted to use this project board. Please contact the admin if this is an error.";
+    echo "<br><a href='" . $folderName . "'>Back to Main Page.</a>";
+    exit();
+}
+
 $admin = "cvieira"; // This is the username of the admin. This user will get special privileges.
 $folderName = "cntprojects"; // This is the name of the parent folder of the projects system.
 
