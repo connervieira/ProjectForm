@@ -8,9 +8,14 @@ if (isset($_SESSION['loggedin'])) {
     header("Location: /login.php"); // If the user is not signed in, send them to the login page.
     exit();
 }
+// To replace the authentication system above, all you need to do is set '$username' to the username of the user currently signed in.
 
+
+// Configuration:
 $admin = "cvieira"; // This is the username of the admin. This user will get special privileges.
 $folderName = "cntprojects"; // This is the name of the parent folder of the projects system.
+
+
 
 $postsArray = unserialize(file_get_contents('/Library/Server/Web/Data/Sites/Default/' . $folderName . '/projectsArray.txt'));
 

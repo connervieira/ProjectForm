@@ -1,7 +1,9 @@
 <?php
-include "/Library/Server/Web/Data/Sites/Default/analytics.php";
-logVisit();
+include "/Library/Server/Web/Data/Sites/Default/analytics.php"; // This uses the V0LT analytics system, and will have to be either removed, or replaced with your own authentication system.
+logVisit(); // Executes the logging of a visit through the V0LT analytics system.
 
+
+// Configuration:
 $admin = "cvieira"; // This is the username of the admin. This user will get special privileges.
 $folderName = "cntprojects"; // This is the name of the parent folder of the project system.
 
@@ -13,7 +15,7 @@ if (isset($_SESSION['loggedin'])) {
 	header("Location: /login.php"); // If user isn't signed in, redirect them to the sign in page
 	exit();
 }
-
+// To replace the authentication system above, all you need to do is set '$username' to the username of the user currently signed in.
 
 $projectsArray = unserialize(file_get_contents('/Library/Server/Web/Data/Sites/Default/' . $folderName . '/projectsArray.txt'));
 ?>
