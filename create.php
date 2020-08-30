@@ -9,7 +9,7 @@ if (isset($_SESSION['loggedin'])) {
 	exit();
 }
 
-$whitelist = Array("cvieira", "testing"); // This is a whitelist of which users can make posts.
+$whitelist = Array("cvieira"); // This is a whitelist of which users can make posts.
 
 if (!in_array($username, $whitelist)) {
     echo "You are not whitelisted to use this project board. Please contact the admin if this is an error.";
