@@ -25,6 +25,9 @@ if (!in_array($username, $whitelist)) { // Check to see if the current user is i
 }
 
 // Load the projects database 
+if (file_get_contents('/Library/Server/Web/Data/Sites/Default/' . $folderName . '/projectsArray.txt') == "" || file_get_contents('/Library/Server/Web/Data/Sites/Default/' . $folderName . '/projectsArray.txt') == null) {
+    echo "The projects database doesn't exist. If you're the admin of this site, create a file named 'projectsArray.txt' in the projects system folder, and fill it with the following:<br><br>a:0:{}";
+}
 $projectsArray = unserialize(file_get_contents('/Library/Server/Web/Data/Sites/Default/' . $folderName . '/projectsArray.txt'));
 $title = $_POST['title'];
 $description = $_POST['description'];
